@@ -12,5 +12,9 @@ def health():
 def greet():
     return jsonify({"message": "Hello from backend"})
 
+@app.route("/")
+def home():
+    return "Welcome to the Backend API!"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
